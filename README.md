@@ -3,7 +3,7 @@ Asynchroniczny wrapper dla api ivall'a.
 
 ## Instalacja
 
-Możesz zainstalować bibliotekę prosto z githuba
+Możesz zainstalować bibliotekę prosto z pypi
 
 **Instalacja:** `pip install ivwrapper`<br>
 
