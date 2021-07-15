@@ -1,4 +1,4 @@
-# ivwrapper 1.0
+# ivwrapper 1.1
 Asynchroniczny wrapper dla api ivall'a.
 
 ## Instalacja
