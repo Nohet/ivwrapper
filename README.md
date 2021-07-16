@@ -1,4 +1,6 @@
 # ivwrapper 1.3
+[![Downloads](https://pepy.tech/badge/ivwrapper)](https://pepy.tech/project/ivwrapper)
+
 Asynchroniczny wrapper dla api ivall'a.
 
 ## Instalacja
