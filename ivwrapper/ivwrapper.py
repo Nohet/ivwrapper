@@ -1,5 +1,4 @@
-from aiohttp import ClientSession
-from .functions import fetch
+from aiohttp import request
 
 
 class Api:
@@ -7,13 +6,13 @@ class Api:
         self.url = "https://ivall.pl/"
 
     async def get_joke(self):
-        async with ClientSession() as session:
-            r = await fetch(session, self.url + "zart")
-            r = r.replace("\n", "")
-            r = r.replace("\t", "")
-        return r
+        async with request(method="GET", url=self.url + "zart") as r:
+            r = (await r.json())["url"]
+
+        return r.strip()
 
     async def get_meme(self):
-        async with ClientSession() as session:
-            r = await fetch(session, self.url + "memy")
+        async with request(method="GET", url=self.url + "memy") as r:
+            r = (await r.json())["url"]
+
         return r
