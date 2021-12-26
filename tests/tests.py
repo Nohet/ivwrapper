@@ -1,5 +1,4 @@
 import asyncio
-
 import ivwrapper
 
 iv = ivwrapper.Api()
