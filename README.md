@@ -1,6 +1,4 @@
-# ivwrapper 1.3
-[![Downloads](https://pepy.tech/badge/ivwrapper)](https://pepy.tech/project/ivwrapper)
-
+# ivwrapper 1.4.1
 Asynchroniczny wrapper dla api ivall'a.
 
 ## Instalacja
@@ -12,7 +10,6 @@ Możesz zainstalować bibliotekę prosto z pypi
 ## Przykładowe użycie
 ```python
 import asyncio
-
 import ivwrapper
 
 iv = ivwrapper.Api()
@@ -26,6 +23,7 @@ async def main():
 if __name__ == "__main__":
     loop = asyncio.get_event_loop()
     loop.run_until_complete(main())
+
 ```
 ## Endpoint'y
 ```python
@@ -33,3 +31,4 @@ if __name__ == "__main__":
 await get_joke()  # Losuje randomowy żart
 await get_meme() # Losuje randomowy mem
  ```
+ 
